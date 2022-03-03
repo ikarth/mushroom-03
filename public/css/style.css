@@ -1,0 +1,197 @@
+/*
+Styling for json-html tables
+https://github.com/yogthos/json-html/blob/master/resources/json.human.css
+*/
+
+.jh-root, .jh-type-object, .jh-type-array, .jh-key, .jh-value, .jh-root tr{
+ -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+ -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+ box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.jh-key, .jh-value{
+ margin: 0;
+ padding: 0.2em;
+}
+
+.jh-empty-collection:before {
+  content: '[]';
+}
+
+.jh-empty-map:before {
+  content: '{}';
+}
+
+.jh-empty-set:before {
+  content: '#{}';
+}
+
+.jh-empty-string:before {
+  content: '""';
+}
+
+.jh-value{
+    border-left: 1px solid #ddd;
+}
+
+.jh-type-bool, .jh-type-number{
+    font-weight: bold;
+    text-align: center;
+    color: #5286BC;
+}
+
+.jh-type-string{
+    font-style: italic;
+    color: #839B00;
+}
+
+.jh-type-date{
+    font-style: italic;
+    color: #839C00;
+}
+
+.jh-array-key{
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+
+.jh-object-key, .jh-array-key{
+    color: #444;
+    vertical-align: top;
+}
+
+.jh-type-object > tbody > tr:nth-child(odd), .jh-type-array > tbody > tr:nth-child(odd){
+    background-color: #f5f5f5;
+}
+
+.jh-type-object > tbody > tr:nth-child(even), .jh-type-array > tbody > tr:nth-child(even){
+    background-color: #fff;
+}
+
+.jh-type-object, .jh-type-array{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.jh-root{
+ border: 1px solid #ccc;
+ margin: 0.2em;
+}
+
+th.jh-key{
+ text-align: left;
+}
+
+.jh-type-object > tbody > tr, .jh-type-array > tr{
+ border: 1px solid #ddd;
+ border-bottom: none;
+}
+
+.jh-type-object > tbody > tr:last-child, .jh-type-array > tbody > tr:last-child{
+ border-bottom: 1px solid #ddd;
+}
+
+.jh-type-object > tbody > tr:hover, .jh-type-array > tbody > tr:hover{
+ border: 1px solid #F99927;
+}
+
+.jh-empty{
+ font-style: italic;
+ color: #999;
+ font-size: small;
+}
+
+.module-box {
+    border: 2px solid #f0f0f5;
+    margin: 0.2em;
+    min-height: 3em;
+    min-width: 4em;
+    background-color: #f3f3ff;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.view-box {
+    width: 31%;
+    display: inline-block;
+    border: 2px solid #ffffff;
+    margin: 0.3%;
+    padding: 0.2%;
+    border-radius: 0.4em;
+}
+
+.selection-list {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 30em;
+}
+.selection-list ul {
+    list-style-type: none;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-inline-start: 0;
+    display: block;
+    overflow-x: visible;
+}
+.selection-list li {
+    background-color: #f3f3f3;
+    border-top: 2px solid #f3f3f3;
+    border-bottom: 2px solid #f3f3f3;
+    padding: 0.3em;
+    width: 100%;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+div.project-view .selection-list li {
+    padding: 0;
+    padding-left: 0.1em;
+}
+
+.selection-list li:nth-child(even) {
+    background-color: #d5d5d5;
+    border-top: 2px solid #d5d5d5;
+    border-bottom: 2px solid #d5d5d5;
+}
+.selection-list li:hover {
+    background-color: #ffbb00;
+    border-top: 2px solid #ddaa00;
+    border-bottom: 2px solid #ddaa00;
+    padding: 0.3em;
+}
+.selection-list li:active {
+    background-color: #ffee99;
+    cursor: progress;
+}
+
+.hover-bg-gold.stripe-dark:nth-child(odd):hover {
+    background-color: #f0a700;
+}
+.hover-bg-gold:focus {
+    background-color: #e09700;
+}
+.hover-bg-gold:focus.stripe-dark:nth-child(odd) {
+    background-color: #e09700;
+}
+.active-bg-gold:active {
+    background-color: #fff0c0;
+}
+.active-bg-gold:active.stripe-dark:nth-child(odd) {
+    background-color: #fff0c0;
+}
+.bg-orange.stripe-dark:nth-child(odd) {
+    background-color: #ff6300;
+}
+.bg-orange.stripe-dark:nth-child(even) {
+    background-color: #ff6300;
+}
+
+.parameters {
+    width: 6em;
+    height: 1.8em;
+}
+div div.stripy:nth-child(even) {
+    background-color: #e0e0d8;
+}
