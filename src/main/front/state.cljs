@@ -5,5 +5,7 @@
 
 (defonce app-state
   (atom {:count 0
-         :gbs-output nil
-         :gbs-input nil}))
+         :data-internal nil
+         :data-nodes nil
+         :data-output nil
+         :data-input nil}))
