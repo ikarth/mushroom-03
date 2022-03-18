@@ -20,9 +20,9 @@
     (generator/make-empty-project database-label)
     
     (swap! app-state assoc-in [:data-internal] (generator/fetch-internal-view))
-    (swap! app-state assoc-in [:data-input] (generator/fetch-input-view))
-    (swap! app-state assoc-in [:data-output] (generator/fetch-output-view))
-    (swap! app-state assoc-in [:data-nodes] (generator/fetch-node-view))
+    (swap! app-state assoc-in [:data-input]    (generator/fetch-input-view))
+    (swap! app-state assoc-in [:data-artifact] (generator/fetch-artifact-view))
+    (swap! app-state assoc-in [:data-nodes]    (generator/fetch-node-view))
     ))
 
 (defn update-database-view [event]
@@ -31,6 +31,6 @@
   (let []
     (swap! app-state assoc-in [:data-internal] (generator/fetch-internal-view))
     (swap! app-state assoc-in [:data-input]    (generator/fetch-input-view))
-    (swap! app-state assoc-in [:data-output]   (generator/fetch-output-view))
+    (swap! app-state assoc-in [:data-artifact] (generator/fetch-artifact-view))
     (swap! app-state assoc-in [:data-nodes]    (generator/fetch-node-view))
     ))
